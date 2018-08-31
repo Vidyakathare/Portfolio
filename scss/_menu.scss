@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin-bottom: 5px;
-    background: $white;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
   &.close {
@@ -125,6 +125,7 @@
     text-decoration: none;
     padding: 10px 0;
     font-weight: 500;
+    color: set-text-color($primary-color);
     @include easeOut;
     &:hover {
       color: $secondary-color;

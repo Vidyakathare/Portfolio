@@ -1,0 +1,62 @@
+@include mediaXl {
+}
+@include mediaLg {
+}
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+  }
+  html {
+    font-size: 12px;
+  }
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    width: 100%;
+    min-height: 0;
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .menu-nav {
+    height: 50vh;
+    transform: translate3d(-100%, 0, 0);
+  }
+  .menu-branding {
+    height: 50vh;
+    transform: translate3d(100%, 0, 0);
+    .portrait {
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
+}
+@include mediaSm {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  html {
+    font-size: 11px;
+  }
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+}
