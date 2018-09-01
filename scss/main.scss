@@ -152,7 +152,7 @@ main {
   @extend .btn;
   background: darken($primary-color, 50);
 }
-#main-footer {
+.main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
